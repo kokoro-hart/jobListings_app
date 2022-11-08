@@ -14,7 +14,7 @@ export function displayJobSeeker(index: number): void {
       for (let i = 0; i < data.result.data.length; i++) {
         jobOpenings.innerHTML += `
         <dt class="p-job-openings__dt">${data.result.data[i].broadName}</dt>
-        <dd class="p-job-openings__dd">${data.result.data[i].value}人</dd>`;
+        <dd class="p-job-openings__dd">${data.result.data[i].value.toLocaleString()}人</dd>`;
       }
     });
   } else {
