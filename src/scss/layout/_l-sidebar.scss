@@ -1,11 +1,13 @@
 @use "../global" as *;
 
-/* component .c-page-heading
+/* layout .l-sidebar
    ----------------------------------------------------------------- */
 
-.c-page-heading {
+.l-sidebar {
   width: 100%;
-  @include fz(32);
-  font-weight: 700;
-  text-align: center;
+  max-width: 180px;
+
+  @include mq(md) {
+    max-width: 190px;
+  }
 }

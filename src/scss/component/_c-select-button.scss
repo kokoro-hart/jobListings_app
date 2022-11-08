@@ -1,0 +1,18 @@
+@use "../global" as *;
+
+/* component .c-select-button
+   ----------------------------------------------------------------- */
+
+.c-select-button {
+  appearance: none;
+  border: 1px solid $color-gray;
+  border-radius: 3px;
+  padding: 10px 12px;
+  @include fz(14, 16);
+  @include lh(1.7);
+
+  @include mq(md) {
+    border: 1px solid $color-gray;
+    padding: 12px 14px;
+  }
+}

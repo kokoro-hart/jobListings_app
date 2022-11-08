@@ -1,0 +1,14 @@
+@use "../global" as *;
+
+/* layout .l-main
+   ----------------------------------------------------------------- */
+
+.l-main {
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  @include mq(md) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}

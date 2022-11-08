@@ -1,0 +1,58 @@
+@use "../global" as *;
+
+/* project .p-job-openings
+   ----------------------------------------------------------------- */
+
+.p-job-openings {
+  position: relative;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 32px;
+  padding: 24px 28px;
+  background-color: $color-white;
+
+  @include mq(md) {
+    max-width: calc(100% - 190px - 5%);
+    margin-top: 0;
+    padding: 32px 42px;
+  }
+}
+
+.p-job-openings__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-job-openings__heading {
+  @include fz(16, 18);
+  @include lh(1.4);
+  font-weight: 700;
+}
+
+.p-job-openings__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+  margin-top: 32px;
+
+  @include mq(md) {
+    margin-top: 52px;
+  }
+}
+
+.p-job-openings__dt,
+.p-job-openings__dd {
+  border-bottom: 1px solid $color-gray-thin;
+  width: 50%;
+  padding-bottom: 8px;
+  white-space: nowrap;
+
+  @include mq(md) {
+    padding-bottom: 12px;
+  }
+}
+
+.p-job-openings__dd {
+  text-align: right;
+}

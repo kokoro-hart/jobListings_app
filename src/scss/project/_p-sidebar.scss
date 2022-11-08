@@ -1,0 +1,27 @@
+@use "../global" as *;
+
+/* project .p-sidebar
+   ----------------------------------------------------------------- */
+
+.p-sidebar__inner {
+  border-radius: 5px;
+  padding: 24px;
+  background-color: $color-white;
+}
+
+.p-sidebar__select {
+  position: relative;
+
+  &::after {
+    content: "都道府県";
+    position: absolute;
+    top: 0;
+    left: 14px;
+    transform: translateY(-50%);
+    color: $color-accent;
+    background-color: $color-white;
+    @include fz(12);
+    @include lh(1);
+    letter-spacing: 0.01em;
+  }
+}
