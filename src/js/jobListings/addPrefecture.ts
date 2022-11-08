@@ -1,4 +1,5 @@
 import { fetchResasApi } from './fetchResasApi';
+import { displayJobSeeker } from './displayJobSeeker';
 import { prefectures } from './globalVariable';
 
 /**
@@ -12,5 +13,9 @@ export function addPrefectureList(): void {
       option.value = data.result[i].prefCode;
       prefectures.appendChild(option);
     }
+
+    // 初期値を東京で表示
+    prefectures.options[13].selected = true;
+    displayJobSeeker(prefectures.selectedIndex);
   });
 }
