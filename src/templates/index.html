@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="RESAS_APIを使用し、指定地域に関する求人・求職者数を表示するアプリケーションです。">
-  <meta property="og:title" content="都道府県別 - 求人・求職者表示APP" >
+  <meta property="og:title" content="都道府県別 - 求人・求職者表示APP">
   <meta property="og:description" content="RESAS_APIを使用し、指定地域に関する求人・求職者数を表示するアプリケーションです。">
   <meta property="og:url" content="">
   <meta property="og:type" content="website">
@@ -15,6 +15,28 @@
 </head>
 
 <body>
+  <main class="l-main">
+    <h1 class="c-page-heading">求人・求職者数一覧</h1>
+    <div class="l-container">
+      <div class="l-sidebar p-sidebar">
+        <div class="p-sidebar__inner">
+          <div class="p-sidebar__select">
+            <select id="js-prefectures" class="c-select-button" aria-label="都道府県を選択">
+              <option value="">都道府県を選択</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="p-job-openings">
+        <div class="p-job-openings__header">
+          <p class="p-job-openings__heading">職業分類名</p>
+          <p class="p-job-openings__heading">求人・求職者数</p>
+        </div>
+        <dl id="js-job-openings" class="p-job-openings__list">
+        </dl>
+      </div>
+    </div>
+  </main>
 </body>
 
 </html>
