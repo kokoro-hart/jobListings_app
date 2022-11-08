@@ -2,7 +2,7 @@ import { fetchResasApi } from './fetchResasApi';
 import { jobOpenings } from './globalVariable';
 
 /**
- * REASAS_APIから職業分類名と求人・求職者数を取得し表示させる関数
+ * RESAS_APIから職業分類名と求人・求職者数を取得し表示させる関数
  */
 export function displayJobSeeker(index: number): void {
   jobOpenings.innerHTML += `<div class="p-loader">Loading...</div>`;

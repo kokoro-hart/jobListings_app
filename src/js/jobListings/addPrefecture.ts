@@ -3,7 +3,7 @@ import { displayJobSeeker } from './displayJobSeeker';
 import { prefectures } from './globalVariable';
 
 /**
- * REASAS_APIから都道府県一覧データを取得しselectのoptionに加える関数
+ * RESAS_APIから都道府県一覧データを取得しselectのoptionに加える関数
  */
 export function addPrefectureList(): void {
   fetchResasApi('https://opendata.resas-portal.go.jp/api/v1/prefectures').then((data) => {
