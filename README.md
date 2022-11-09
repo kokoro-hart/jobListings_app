@@ -1,6 +1,10 @@
 # 都道府県別 - 求人・求職者表示APP
 [RESAS API](https://opendata.resas-portal.go.jp/ "RESAS API")を使用し、指定地域に関する求人・求職者数を表示するアプリケーションです。
 
+<div><video controls src="https://kt-media.blog/wp-content/uploads/2022/11/joblistingsapp.mp4"autoplay loop muted playsinline></video></div>
+<br>
+<br>
+
 ## 注意点
 RESAS APIを使用する場合、利用登録(無料)を行い、API Keyを発行する必要があります。  
 このリポジトリ内ではセキュリティ上API Keyを格納したファイルは.gitignoreに追加しております。  
@@ -13,7 +17,6 @@ export const config: {
   apiKey: '任意のAPI Key',
 };
 ```
-
 
 ## 開発開始時
 ```
