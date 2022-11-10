@@ -10,8 +10,8 @@ import { prefecturalSelectionEvents } from './jobListings/prefecturalSelectionEv
 import { prefectures, jobOpenings } from './jobListings/globalVariable'
 // scssを読み込み
 import '../scss/style.scss';
-
 resizeViewport();
+
 if (prefectures && jobOpenings) {
   addPrefectureList();
   displayJobSeeker();
