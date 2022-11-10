@@ -183,7 +183,8 @@ templates.forEach((template) => {
       filename: `${fileName}`,
       template: template,
       inject: true,
-      minify: false 
+      minify: false ,
+      favicon: './src/img/favicon.ico',
     }),
   );
 });
