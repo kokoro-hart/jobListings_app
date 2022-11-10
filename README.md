@@ -1,8 +1,9 @@
 # 都道府県別 - 求人・求職者表示APP
 [RESAS API](https://opendata.resas-portal.go.jp/ "RESAS API")を使用し、指定地域に関する求人・求職者数を表示するアプリケーションです。
 
-<div><video controls src="https://kt-media.blog/wp-content/uploads/2022/11/joblistingsapp.mp4"autoplay loop muted playsinline></video></div>
-<br>
+https://user-images.githubusercontent.com/84849551/200839275-d6e8c401-db95-48a0-b2f1-58106b4971d5.mp4
+
+
 <br>
 
 ## 注意点
