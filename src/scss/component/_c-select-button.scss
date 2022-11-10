@@ -10,6 +10,7 @@
   padding: 10px 12px;
   @include fz(14, 16);
   @include lh(1.7);
+  cursor: pointer;
 
   @include mq(md) {
     border: 1px solid $color-gray;
