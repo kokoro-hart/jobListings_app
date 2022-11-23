@@ -11,11 +11,11 @@ export function addPrefectureList(): void {
       let option = document.createElement('option') as HTMLOptionElement;
       option.text = data.result[i].prefName;
       option.value = data.result[i].prefCode;
-      prefectures.appendChild(option);
+      prefectures?.appendChild(option);
     }
 
     // 初期値を東京で表示
-    prefectures.options[13].selected = true;
-    displayJobSeeker(prefectures.selectedIndex);
+    prefectures ? (prefectures.options[13].selected = true) : undefined;
+    displayJobSeeker(prefectures ? prefectures.selectedIndex : 0);
   });
 }
